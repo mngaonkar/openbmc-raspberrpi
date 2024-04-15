@@ -1,6 +1,7 @@
 # Build instructions
 source poky/oe-init-build-env rpi-build
 
+copy conf directory to rpi-build/conf
 bitbake -c cleanall core-image-base
 bitbake core-image-base
 
