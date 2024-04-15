@@ -1,0 +1,12 @@
+source poky/oe-init-build-env rpi-build
+
+bitbake -c cleanall core-image-base
+bitbake core-image-base
+
+
+Following changes to be noted in local.conf file
+
+LICENSE_FLAGS_ACCEPTED += “synaptics-killswitch”
+IMAGE_FSTYPES="rpi-sdimg”
+
+
